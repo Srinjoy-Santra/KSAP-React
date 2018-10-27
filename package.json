@@ -3,10 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animejs": "^2.2.0",
+    "form-serialize": "^0.7.2",
+    "jquery": "^3.3.1",
+    "material-icons-react": "^1.0.4",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-sidenav": "^3.1.1",
+    "styled-components": "^4.0.2",
+    "typeface-roboto": "0.0.54",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

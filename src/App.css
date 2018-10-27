@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -26,3 +26,22 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+*/
+.col{
+             min-width:300px;
+             }
+             .out-card {
+            flex: auto;
+              }
+             .scrollable{
+                 display: flex;
+                  flex-wrap: nowrap;
+                overflow-x: auto;
+
+             }
+             .name{
+                 color: #3170be;
+             }
+             h3{
+                 color: #5085a5;
+             }
