@@ -1,9 +1,10 @@
 import 'materialize-css';
 import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
-//import { BrowserRouter, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
 import MaterialIcon, {colorPalette} from 'material-icons-react';
+import SocPage from './Societies';
 
 class Sidebar extends Component {
     componentDidMount() {
@@ -36,7 +37,8 @@ class Sidebar extends Component {
                   <li id="downs"><a className="subheader" href="#">Downloads</a></li>
                   <li><div className="divider" /></li>
                   <li id="onAppl"><a className="waves-effect" href="#!">Online Application</a></li>
-                  <li id="society"><a className="waves-effect" href="societies.html" target="dframe">About Societies</a></li>
+                  <li id="society"><Link to="/Societies" className="waves-effect">About Societies</Link></li>
+                  <Route path="/Societies" component={SocPage}/>
                   <li id="fb"><a className="waves-effect" href="#!">Feedback</a></li>
                   <li id="pay"><a className="waves-effect" href="#!">Payment</a></li>
 
@@ -45,6 +47,7 @@ class Sidebar extends Component {
                     <i className="material-icons">menu</i>
 
                 </a>
+
             </div>
         );
     }
